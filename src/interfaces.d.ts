@@ -22,8 +22,3 @@ interface CalculationVariables {
   leaseMonths: number;
   salesTax: number;
 }
-
-interface CalcState {
-  input: CalculationVariables;
-  sum: number;
-}

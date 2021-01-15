@@ -6,19 +6,16 @@ interface Props {
   handleInputChange(event: React.ChangeEvent): any;
 }
 
-class Calculator extends React.Component<Props, CalcState> {
-
-  render () {
+const Calculator: React.FC<Props> = ({sections, handleInputChange}) => {
     return (
-      <div className="Calculator">
+      <div className="calculator">
         {
-          this.props.sections.map((section) => {
-            return <Section key={section.input.id} section={section} handleInputChange={this.props.handleInputChange}/>
+          sections.map((section) => {
+            return <Section key={section.input.id} section={section} handleInputChange={handleInputChange}/>
           })
         }
       </div>
     );
-  }
 };
 
 export default Calculator;

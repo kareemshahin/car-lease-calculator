@@ -4,15 +4,13 @@ interface Props {
   payment: number;
 }
 
-class Payment extends React.Component<Props, CalcState> {
-
-  render () {
-    return (
-      <div className="Payment">
-        <p>Monthly Payment: ${this.props.payment.toFixed(2)}</p>
-      </div>
-    );
-  }
+const Payment: React.FC<Props> = ({payment}) => {
+  return (
+    <div className="payment">
+      <p>Monthly Payment:</p>
+      <span id="monthly-payment-total">${payment.toFixed(2)}</span>
+    </div>
+  );
 };
 
 export default Payment;

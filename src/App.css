@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto;
+  margin: 10px 100px;
+  border-radius: 25px;
+  border: 1px solid;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1#title-header {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .App-logo {
@@ -35,4 +49,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+div.calculator {
+  display: grid;
+  /*grid-template-columns: auto auto;*/
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  padding: 20px;
+  overflow: auto;
+}
+
+div.payment {
+  padding: 20px;
+  background-color: #c7ccd4;
+  border-radius: 0px 25px 25px 0px;
+  overflow: auto;
+}
+
+div.payment span#monthly-payment-total {
+  font-size: 30px;
+}
+
+div.calc-input-section {
+  padding: 10px;
 }

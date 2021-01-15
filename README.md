@@ -2,11 +2,6 @@
 
 A simple car lease calculator written in TypeScript with the ReactJS framework.
 
-## Todo
-
-- [ ] Styling/UI
-- [ ] Tests
-
 ## Available Scripts
 
 In the project directory, you can run:
